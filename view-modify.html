@@ -1,0 +1,242 @@
+﻿<div ng-init="getData()">
+		<ng-form name='accesform'>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="container">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+						<td colspan="2">
+						<div>
+							<label>Employee Info&nbsp;</label><span data-toggle="tooltip" data-placement="bottom" title="Buttons will appear AFTER you fill out all the required information" class='glyphicon glyphicon-info-sign'></span>
+						</div>
+						</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><label>Company</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+								<input id="company" type="text" class="form-control" value="{{editInfo.Company_x0020_Number}}" disabled="disabled">
+								<!-- <select type="text" class="form-control" ng-model="form.company" ng-change="refreshLocations()" data-ng-options="company.Name for company in companies | filter:lessThan" required="true"> -->
+									<!-- <option value="">--Choose A Company--</option> -->
+								<!-- </select>-->
+							</td>
+						</tr>
+						<tr>
+						
+						</tr>
+						<tr>
+							<td><label>Emp Name</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+							<input id="employee" type="text" class="form-control" value="{{editInfo.Title}}" disabled="disabled">
+							<!-- <select type="text" ng-model="form.employee" value="" ng-change="selectEmployee()" class="form-control" data-ng-options="employee.FullName for employee in employees" required="true"> -->
+							<!-- <option value="">--Choose an Employee--</option> -->
+							<!-- </select> -->
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label>User ID</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+								<input id="userID" type="text" class="form-control" value="{{editInfo.User_x0020_ID}}" disabled="disabled">
+								<!-- <input readonly type="text" value="" data-ng-model="form.employee.UserName" class="form-control" required="true"> -->
+							</td>
+						</tr>
+						<tr>
+							<td><label>Title</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+							<input id="jobTitle" type="text" class="form-control" value="{{editInfo.jobtitle}}" disabled="disabled">
+							</td>
+							<!-- <td><input readonly type="text" value="" data-ng-model="form.employee.JobTitle" class="form-control" required="true"></td> -->
+						</tr>
+						<tr>
+							<td><label>Today's Date</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+							<input id="todaysDate" type="text" class="form-control" value="{{editInfo.today | date:'MM/dd/yyyy'}}" disabled="disabled">
+							<!-- <div class='input-group date' id='starttimepicker'> -->
+								<!-- <input onkeydown="return false" size="20" id='datetimepicker' required="true" type='text' data-ng-model="form.today" class="form-control" readonly="true" /> -->
+								<!-- <span class="input-group-addon"> -->
+									<!-- <span class="glyphicon glyphicon-calendar"></span> -->
+								<!-- </span> -->
+							<!-- </div> -->
+							</td>
+						</tr>
+						<tr>
+							<td><label>Effective Date<small><i class="glyphicon glyphicon-asterisk"></i></small></label></td>
+							<td>
+							<input id="effectiveDate" type="text" class="form-control" value="{{editInfo.effective | date:'MM/dd/yyyy'}}" disabled="disabled">
+							<!-- <div class="input-group date" id="starttimepicker1"> -->
+								<!-- <input size="20" id="datetimepicker1" required="true" type="text" data-ng-model="form.effective" class="form-control" readonly="true" /> -->
+								<!-- <span class="input-group-addon"> -->
+									<!-- <span class="glyphicon glyphicon-calendar"></span> -->
+								<!-- </span> -->
+							<!-- </div> -->
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<div>
+							<label>Position Info&nbsp;</label><span data-toggle="tooltip" data-placement="bottom" title="Please fill out the position information." class='glyphicon glyphicon-info-sign'></span>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Position</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+								<input id="position" type="text" class="form-control" value="{{editInfo.nh2s}}" disabled="disabled">
+								 <!-- <div> -->
+									<!-- <input id="question1" name="position" type="radio" value='newhire' data-ng-model='form.position' class="with-font" value="sel" required /> -->
+									<!-- <label class="positionBoxName" for="question1">New Hire</label> -->
+								  <!-- </div> -->
+								  <!-- <div> -->
+									<!-- <input id="question2" name="position"type="radio" value='changelocation'  data-ng-model='form.position' class="with-font" value="sel" /> -->
+									<!-- <label class="positionBoxName" for="question2">Change Location</label> -->
+								  <!-- </div> -->
+								  <!-- <div> -->
+									<!-- <input id="question3" name="position" type="radio" value='termination' data-ng-model='form.position' class="with-font" value="sel" /> -->
+									<!-- <label class="positionBoxName" for="question3">Termination</label> -->
+								<!-- </div> -->
+							</td>
+						</tr>
+						<tr>
+							<td><label>Position Info</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+								<input id="positionInfo" type="text" class="form-control" value="{{editInfo.abtz}}" disabled="disabled">
+								  <!-- <div> -->
+									<!-- <input id="question4" name="positioninfo" type="radio" value='newposition' ng-click="clearReplacement()" data-ng-model='form.positioninfo' class="with-font" value="sel" required /> -->
+									<!-- <label class="positionBoxName" for="question4">New Position</label> -->
+								  <!-- </div> -->
+								  <!-- <div> -->
+									<!-- <input id="question5" name="positioninfo" type="radio" value='replacementposition' data-ng-model='form.positioninfo' class="with-font" value="sel"/> -->
+									<!-- <label class="positionBoxName" for="question5" >Replacement Position</label> -->
+								  <!-- </div> -->
+								  <!-- <div> -->
+								  <!-- <label class="positionBoxName" ng-show="form.positioninfo == 'replacementposition'" >Employee being replaced:</label> -->
+								  <!-- <input ng-show="form.positioninfo == 'replacementposition'" id="question6" name="question" type="text" value="" data-ng-model='form.replacement' class="form-control" data-ng-required="form.positioninfo == 'replacementposition'" required='false'> -->
+								  <!-- </div> -->
+								  <!-- <br/> -->
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<div>
+							<label>Equipment & Facilities&nbsp;<span data-toggle="tooltip" data-placement="bottom" title="Please fill out the position information." class='glyphicon glyphicon-info-sign'></span></label>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<label>Item</label>
+							</td>
+							<td>
+							<label>Description</label>
+							</td>							
+						</tr>
+						<tr>
+							<td>
+								<label>Key Locations</label>
+								<!-- <input id="box1" type="checkbox" class="with-font" value="" ng-model="checked"><label class="positionBoxName" for="box1">Key</label> -->
+							</td>
+							<td>
+								<input id="keyLocations" type="text" class="form-control" value="{{editInfo.keyLocations}}" disabled="disabled">
+								<!-- <div id="keyBtn" class="btn-group"> -->
+								  <!-- <button ng-show="checked" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span id="keyLocation">Select Location(s)</span></button> -->
+									<!-- <ul class="dropdown-menu scrollable-menu bullet pull-top"> -->
+									  <!-- <li ng-repeat="keyLocation in keyLocations track by $index"><input type="checkbox" ng-click="checkKeyLocations()" id="{{keyLocation.Name}}_keyLocation" name="keyLocation"></input><label for="{{keyLocation.Name}}_keyLocation" >{{keyLocation.Name}}</label></li> -->
+									<!-- </ul> -->
+								<!-- </div> -->
+							 </td>
+						</tr>
+						<tr>
+							<td>
+								<label>Alarm Locations</label>
+								<!-- <input id="box2" type="checkbox" class="with-font" value="" ng-model="checked1"><label class="positionBoxName" for="box2">Alarm</label> -->
+							</td>
+							<td>
+								<input id="alarmLocations" type="text" class="form-control" value="{{editInfo.o1k7}}" disabled="disabled">
+								<!-- <div id="alarmBtn" class="btn-group"> -->
+								  <!-- <button ng-show="checked1" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span id="alarmLocation">Select Location(s)</span></button> -->
+									<!-- <ul class="dropdown-menu scrollable-menu bullet pull-top"> -->
+									  <!-- <li ng-repeat="alarmLocation in alarmLocations track by $index"><input type="checkbox" ng-click="checkAlarmLocations()" id="{{alarmLocation.Name}}_alarmLocation" name="alarmLocation"></input><label for="{{alarmLocation.Name}}_alarmLocation" >{{alarmLocation.Name}}</label></li> -->
+									<!-- </ul> -->
+								<!-- </div> -->
+							</td>
+						</tr>
+						<tr>
+							<td><label>Notes</label></td>
+							<td>
+							<input id="notes" type="text" class="form-control" value="{{editInfo.pyoc}}" disabled>
+							<!-- <textarea class="form-control" type="text" ng-model="form.notes"></textarea> -->
+							</td>
+						</tr>
+						<tr ng-show="rejectRequest">
+							<td><label>Rejected Notes</label><small><i class="glyphicon glyphicon-asterisk"></i></small></td>
+							<td>
+							<textarea id="rejectedNotes" type="text" class="form-control" ng-model="form.rejectedNotes" required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<button class="btn btn-lg btn-primary btn-block" type="button" ng-click="submitRequest()">Approve&nbsp;Request</button>
+							</td>
+						</tr>
+						<tr class="noLines">
+							<td colspan="2">
+							<button class="btn btn-lg btn-primary btn-block" type="button" ng-click="rejectRequest()">Reject&nbsp;Request</button>
+							</td>
+						</tr>
+						<tr class="noLines">
+							<td colspan="2">
+							<button class="btn btn-lg btn-primary btn-block" type="button" ng-click="cancel()">Exit</button>
+							</td>
+						</tr>
+						</tbody>
+				</table>
+				</div>
+			</div>
+		</ng-form>
+	</div>
+<style>
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(51,51,51,0.7);
+	z-index: 10;
+	display: inline-block;
+	text-align: center;
+	float: none;
+}
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+.glyphicon.glyphicon-asterisk{
+	top : -5px;
+	color: red;
+	font-size : 50%;
+}
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+</style>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>

@@ -1,0 +1,61 @@
+<div class="container">
+<div ng-init="getData()">
+	<h4 style="margin-left: 10px;">List Items Waiting for Approval</h4>
+	<form name="validationCode">
+		<div class="spacious-container table-search">
+						<!-- <div class="card-block" style="border: 1px solid black; margin-bottom: 1.5em; border-radius: 5px;"> -->
+							<!-- <input id="{{info.Id}}" type="checkbox" class="with-font card-title" value="" ng-model="selected[info.Id]" ng-change="getSelectedState()" ><label class="checkBoxName" for="{{info.Id}}">Approved</label> -->
+							<br />
+
+								<!-- <ul class="list-inline"> -->
+								<table class="table table-striped table-hover" ng-mouserover="loadScroll()">
+									<thead>
+										<tr>
+											<th class="headcol">User ID</th>
+											<th class="th-search">Job Title</th>
+											<th style="width: 120px">Company</th>
+											<th class="th-search">Manager</th>
+											<th class="th-search">Employee Name</th>
+											<th class="th-search">Submitted Date</th>
+											<th class="th-search">Effective Date</th>
+											<th class="th-search">Position</th>
+											<th class="th-search">Position Info</th>
+											<th class="th-search">Replacement</th>
+											<th class="th-search">Key Locations</th>
+											<th class="th-search">Alarm Locations</th>
+											<th class="th-search">Notes</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="info in accessInfo | filter: {Status: '!rejected'}">
+										<td class="headcol"><a ng-click="EditModal(info)"><span class="glyphicon glyphicon-edit"></span></a>{{info.User_x0020_ID}}</td>
+										<td>{{info.jobtitle}}</td>
+										<td>{{info.Company_x0020_Number}}</td>
+										<td>{{info.Manager}}</td>
+										<td>{{info.Title}}</td> <!--Employee Name-->
+										<td>{{info.today | date:'MM/dd/yyyy'}}</td>
+										<td>{{info.effective | date:'MM/dd/yyyy'}}</td>
+										<td>{{info.nh2s}}</td> <!--Position-->
+										<td>{{info.abtz}}</td><!--Position Info-->
+										<td>{{info.replacement}}</td>
+										<td>{{info.keyLocations}}</td>
+										<td>{{info.o1k7}}</td><!--Alarm Locations-->
+										<td>{{info.pyoc}}</td><!--Notes-->
+										</tr>
+									</tbody>
+								</table>
+			</div>
+			<div colspan="2" ng-show="noData">
+				<h2 style="text-align: center; color:#646464">NO ITEMS WAITING FOR APPROVAL</h2>
+			</div>
+			<br/>
+			<!-- <button ng-disabled="!isSelected" class="btn btn-lg btn-primary" id="submitApproval" type="button" ng-click="submitForApproval()" >Submit&nbsp;Approval</button> -->
+            <!-- <button ng-disabled="!isSelected" class="btn btn-lg btn-primary" id="submitReject" type="button" ng-click="rejectForm()" >Reject</button> -->
+			<br/>
+			
+	</form>
+	<br/>
+	<br/>
+
+</div>
+</div>

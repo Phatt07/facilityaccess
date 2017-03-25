@@ -1,0 +1,43 @@
+<div class="col-sm-12 col-md-12 col-lg-12" style="border: 1px solid black; margin-bottom: 25px; margin-top: 25px; border-radius: 5px;" ng-init="getData()">
+	<h4 style="margin-left: 10px;">Display List Items</h4>
+	<form name="validationCode">
+		<div ng-repeat="info in accessInfo">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+				<input id="{{info.Id}}" type="checkbox" class="with-font" value="" ng-model="selected[info.Id]" ng-change="getSelectedState()" ><label class="checkBoxName" for="{{info.Id}}">Approved</label>
+			</div>
+			<div class="col-sm-9 col-md-9 col-lg-9">
+				<div class="list-group">
+					<ul class="list-inline">
+					<li><b>Company Number:</b> {{info.Company_x0020_Number}}</li>
+					<li><b>Job Title:</b> {{info.jobtitle}}</li>
+					<li><b>Manager:</b> {{info.Manager}}</li>
+					<li><b>Employee Name:</b> {{info.Title}}</li>
+
+					<li><b>User ID:</b> {{info.User_x0020_ID}}</li>
+					<li><b>Submitted Date:</b> {{info.today}}</li>
+					<li><b>Effective Date:</b> {{info.effective}}</li>
+					<li><b>Position:</b> {{info.nh2s}}</li>
+
+					<li><b>Position Info:</b> {{info.abtz}}</li>
+					<li ng-show="info.replacement"><b>Replacement:</b> {{info.replacement}}</li>
+					<li ng-show="info.keyLocations"><b>Key Locations:</b> {{info.keyLocations}}</li>
+					<li ng-show="info.o1k7"><b>Alarm Locations:</b> {{info.o1k7}}</li>
+
+					<li ng-show="info.pyoc"><b>Notes:</b> {{info.pyoc}}</li>
+					</ul>
+					<hr id="darkLine" align="left" >
+				</div>
+			</div>
+		</div>
+	<div colspan="2" ng-show="noData">
+	<h2 style="text-align: center; color:#646464">NO ITEMS</h2>
+	</div>
+	<br/>
+	<button ng-show="accessInfo.length > 1" class="btn btn-lg btn-primary" id="selectAll" ng-click="getSelectedState()" type="button">Select&nbsp;All</button>
+	<button ng-disabled="!isSelected" class="btn btn-lg btn-primary" id="submitApproval" type="button" ng-click="submitForApproval()" >Submit&nbsp;Approval</button>
+    <button ng-disabled="!isSelected" class="btn btn-lg btn-primary" id="submitReject" type="button" ng-click="rejectForm()">Reject</button>
+	<br/>
+	</form>
+</div>
+
+

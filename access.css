@@ -1,0 +1,1102 @@
+	/* SharePoint 2013 Housekeeping */
+
+input.ng-invalid {
+    background-color:pink;
+}
+input.ng-valid {
+    background-color:lightgreen;
+}
+
+select.ng-invalid {
+    background-color:pink;
+}
+select.ng-valid {
+    background-color:lightgreen;
+}
+	
+#suiteBarDelta, #s4-titlerow, #s4-ribbonrow, #titleAreaBox, #sideNavBox,#DeltaPageStatusBar {
+	display:none !important;
+}
+#topnavbar.navbar {
+    display: none;
+}
+.ms-srch-sb {
+    display: none;
+}
+
+.ms-siteicon-img{
+	display: none;
+}
+
+.container-outer{
+	background-color: white;
+}
+.ms-webpartzone-cell{
+	margin-bottom: 0px;
+}
+.ms-wikicontent{
+	padding: 0px !important;
+}
+
+.ms-backgroundImage{
+	background: transparent;
+	background-color: #3f3f3f;
+}
+
+#contentBox, #sideNavBox, .ms-webpart-chrome-fullWidth, .row{
+	margin-left:0px !important; 
+	margin-right:0px !important; 
+	min-width:0px !important;
+}
+.container, #s4-bodyContainer{
+    padding: 0px !important;
+	margin: auto !important;
+	width: 100% !important;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#contentRow{
+	padding-top: 0px !important;
+}
+/* Header Image (Clyde Companies) */
+
+ label{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+ }
+  .checkBoxName{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 24px;
+ }
+ .positionBoxName{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 17px;
+ }
+ 
+ #darkLine{
+	display: block;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+	border: 1px solid;
+ }
+ 
+ #selectAll{
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 15px;
+ }
+
+ #submitApproval{
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: 15px;
+ }
+ 
+.th-search{
+	min-width: 200px;
+}
+.dropdowns{
+	min-width: 300px;
+}
+
+
+/* This removes word wrap from table in SharePoint */
+.ms-rtestate-field{
+	white-space: nowrap !important;
+}
+ /*************************************************/
+ 
+ 
+.navbar{
+	margin-bottom: 0px !important;
+	color: #999 !important;
+ }
+.background {
+  overflow-x: hidden;
+  overflow-y: auto; /* has to be scroll, not auto*/
+  -webkit-overflow-scrolling: touch;
+}
+#tfnewsearch{
+	font-size: 14px;
+	font-weight:  bold;
+}
+#tfheader{
+	background-color: #fff;
+	padding: 10px;
+}
+
+.col-xs-12, .col-sm-12, .col-md-9 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+#s4-workspace {
+	display: block;
+}
+
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+	.btn ,.btn-primary, .btn-block{
+		border: solid 1px #808080;
+		margin-top: 8px;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(#646464)) !important;
+		background: -moz-linear-gradient(top,  #a2a2a2,  #646464)!important;
+		background-color: #646464 !important;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+}
+
+#Company{
+		margin-top: 8px;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(#646464)) !important;
+		background: -moz-linear-gradient(top,  #a2a2a2,  #646464) !important;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		color: #000;
+		background-color: #646464;
+		font-family: sans-serif;
+		font-size: large;
+		font-weight: bold;
+}
+	.btn-block{
+		margin: 10px 0px;
+}
+	
+	.red{
+		color: red;
+}
+	
+	#searchclear {
+    position: absolute;
+    right: 27px;
+    top: 33px;
+    height: 14px;
+    margin: auto;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+/********** Glyphicon animation and position********/
+#loadingIcon {
+    position: absolute;
+    right: 65px;
+    top: 33px;
+	height: 29.5px;
+	width: 25px;
+    margin: auto;
+    font-size: 25px;
+    color: #000;
+}
+
+.glyphicon-refresh-animate {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/*********************************************/
+
+
+.scrollable-menu 
+{
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown-menu.bullet {
+   margin-top: 8px;
+}
+.dropdown-menu.bullet:before {
+   width: 0;
+   height: 0;
+   content: '';
+   display: inline-block;
+   position: absolute;
+   border-color: transparent;
+   border-style: solid;
+   -webkit-transform: rotate(360deg);
+   border-width: 0 7px 7px;
+   border-bottom-color: #cccccc;
+   border-bottom-color: rgba(0, 0, 0, 0.15);
+   top: -7px;
+   left: 9px;
+}
+.dropdown-menu.bullet:after {
+   width: 0;
+   height: 0;
+   content: '';
+   display: inline-block;
+   position: absolute;
+   border-color: transparent;
+   border-style: solid;
+   -webkit-transform: rotate(360deg);
+   border-width: 0 6px 6px;
+   border-bottom-color: #ffffff;
+   top: -6px;
+   left: 10px;
+}
+
+	.truckPrefix{
+		float: left
+	}
+
+	.truckNum{
+		width: 100%;
+	}
+
+	.toggleSearch{
+		text-decoration: underline !important;
+		font-size: 20px;
+	}
+	
+	.tftextinput{
+		padding: 5px 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3;
+		border-radius: 5px 5px;
+	}
+
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .active.btn-primary, .open .btn-primary.dropdown-toggle {
+		text-decoration: none;
+		background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#676767));
+		background: -moz-linear-gradient(top,  #1a1a1a,  #676767);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+	.header .searchbox{
+		display: none!important;
+	}
+/*------------------Back to Top-----------------------*/
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+	border-radius: 25px;
+}
+	
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 8px 14px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: bold;
+line-height: 1em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border-radius: 3px;
+color: #FFF;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #FFF;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+color: #345e88;
+}
+
+
+input[type=radio].with-font,
+input[type=checkbox].with-font {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+    
+input[type=radio].with-font ~ label:before,
+input[type=checkbox].with-font ~ label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f1db";
+    letter-spacing: 10px;
+    font-size: 24px;
+    color: #535353;
+    width: 1.4em;
+}
+
+input[type=radio].with-font:checked ~ label:before,
+input[type=checkbox].with-font:checked ~ label:before  {
+    content: "\f00c";
+    font-size: 24px;
+    color: darkgreen;
+    letter-spacing: 5px;
+}
+input[type=checkbox].with-font ~ label:before {        
+    content: "\f096";
+}
+input[type=checkbox].with-font:checked ~ label:before {
+    content: "\f046";        
+    color: darkgreen;
+}
+input[type=radio].with-font:focus ~ label:before,
+input[type=checkbox].with-font:focus ~ label:before,
+input[type=radio].with-font:focus ~ label,
+input[type=checkbox].with-font:focus ~ label
+{                
+    color: green;
+}
+
+.glyphicon-edit{
+	font-size: 22px;
+	float: right;
+	margin-top: -5px !important;
+}
+/********fixed table column**********/
+.table-search{
+	overflow: auto;
+	margin-left: 120px;
+}
+
+
+.headcol {
+	position: absolute;
+	width: 130px;
+	height: auto;
+	left: 0;
+	top: auto;
+	font-weight: bold;
+}
+/**********************************/
+
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #cce9ff;
+}
+
+
+ .noLines td{  
+    border: none !important; 
+	padding-top: 0px !important;
+ }	
+ 
+	
+body{font-size: 13.5px;}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 315px) {
+.truckNum{
+	width: 100%;
+}
+.header{
+	margin-top: -20.5px;
+}	
+	#loadingIcon {
+    position: absolute;
+    right: 65px;
+    top: 33px;
+	height: 25px;
+	width: 22px;
+    margin: auto;
+    font-size: 22px;
+    color: #000;
+}
+
+ #submitApproval{
+	padding-left: 65px;
+	padding-right: 65px;
+	margin: 15px;
+ }
+
+.table-condensed thead>tr>th, .table-condensed tbody>tr>th, .table-condensed tfoot>tr>th, .table-condensed thead>tr>td, .table-condensed tbody>tr>td, .table-condensed tfoot>tr>td {
+    padding-right: 1px;
+}
+}
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 370px) {
+.truckNum{
+	width: 100%;
+}
+#tfheader{
+	margin-top: -15px;
+}	
+	#loadingIcon {
+    position: absolute;
+    right: 65px;
+    top: 33px;
+	height: 25px;
+	width: 22px;
+    margin: auto;
+    font-size: 22px;
+    color: #000;
+}
+
+ #submitApproval{
+	padding-left: 90px;
+	padding-right: 90px;
+	margin: 15px;
+ }
+ 
+.table-condensed thead>tr>th, .table-condensed tbody>tr>th, .table-condensed tfoot>tr>th, .table-condensed thead>tr>td, .table-condensed tbody>tr>td, .table-condensed tfoot>tr>td {
+    padding-right: 1px;
+}
+}
+
+    /* Small Devices, Phones */ 
+    @media only screen and (min-width : 410px) {
+.truckNum{
+	width: 100%;
+}
+#tfheader{
+	margin-top: -15px;
+}
+	#loadingIcon {
+    position: absolute;
+    right: 65px;
+    top: 33px;
+	height: 25px;
+	width: 22px;
+    margin: auto;
+    font-size: 22px;
+    color: #000;
+}
+
+.table-condensed thead>tr>th, .table-condensed tbody>tr>th, .table-condensed tfoot>tr>th, .table-condensed thead>tr>td, .table-condensed tbody>tr>td, .table-condensed tfoot>tr>td {
+    padding-right: 1px;
+}
+
+}
+	
+	/* Extra Small Devices, Phones flipped] */ 
+		@media only screen and (min-width : 639 px) {
+.truckNum{
+	width: 100%;
+}
+#tfheader{
+	margin-top: 0px;
+}	
+#loadingIcon {
+    position: absolute;
+    right: 65px;
+    top: 33px;
+	height: 25px;
+	width: 22px;
+    margin: auto;
+    font-size: 22px;
+    color: #000;
+}
+ #submitApproval{
+	padding-left: 65px;
+	padding-right: 65px;
+	margin: 15px;
+ }
+ 
+
+
+.table-condensed thead>tr>th, .table-condensed tbody>tr>th, .table-condensed tfoot>tr>th, .table-condensed thead>tr>td, .table-condensed tbody>tr>td, .table-condensed tfoot>tr>td {
+    padding-right: 1px;
+}
+}
+	/* Extra Small Devices, iPhone 6+ flipped] */ 
+		@media only screen and (min-width : 730 px) {
+.truckNum{
+	width: 100%;
+}
+#tfheader{
+	margin-top: 0px;
+}
+
+#darkLine{
+	display: block;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+	border: 1px solid;
+	width: 97%;
+ }
+	
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+#Company{
+		width: 250px;
+		margin-top: 8px;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(#646464));
+		background: -moz-linear-gradient(top,  #a2a2a2,  #646464);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		color: #000;
+		font-family: sans-serif;
+		font-size: large;
+		font-weight: bold;
+}
+#tfheader{
+	margin-top: 10px;
+}	
+
+#darkLine{
+	display: block;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+	border: 1px solid;
+	width: 97%;
+ }
+}
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+#Company{
+		width: 250px;
+		margin-top: 8px;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(#646464));
+		background: -moz-linear-gradient(top,  #a2a2a2,  #646464);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		color: #000;
+		font-family: sans-serif;
+		font-size: large;
+		font-weight: bold;
+}
+#tfheader{
+	margin-top: 20px;
+}
+
+#darkLine{
+	display: block;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+	border: 1px solid;
+	width: 97%;
+ }
+	
+}
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+#Company{
+		width: 250px;
+		margin-top: 8px;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(#646464));
+		background: -moz-linear-gradient(top,  #a2a2a2,  #646464);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		color: #000;
+		font-family: sans-serif;
+		font-size: large;
+		font-weight: bold;
+}
+#tfheader{
+	margin-top: 20px;
+}
+
+#darkLine{
+	display: block;
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+	border: 1px solid;
+	width: 97%;
+ }
+	
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/* input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+/*   padding: 0; /* 2 */
+/* } */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.kjasfkj
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+
+/*** basic styles ***/
+
+/* body { margin: 30px; }  */
+/* h1 { font-size: 1.5em; } */
+/* label { font-size: 24px; } */
+
+
+.disclaimer{
+	font-size: 12px;
+	font-family: sans-serif;
+	font-style: italic;
+	font-weight: bolder;
+	background-color: red;
+	color: #FFF;
+	display: inline-block;
+}
